@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://previews.123rf.com/images/svetlanaparsh/svetlanaparsh1510/svetlanaparsh151000069/47461427-logo-avec-cl%C3%A9-de-sol.jpg">
+    <title>CleDeSol</title>
+    <style>
+        *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto','sans-serif';
+            }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://t3.ftcdn.net/jpg/01/85/03/88/360_F_185038897_yzi7ChFzajbXHc1cekwvqknu27bxP9BE.jpg');
+            background-position: center;
+            background-size: cover;
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+
+        }
+        .navbar{
+            height: 12%;
+            display: flex;
+            align-items: center;
+
+        }
+        .logo{
+            width: 50px;
+            cursor: pointer;
+        }
+        nav{
+            flex: 1;
+            text-align: right;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin-left: 60px;
+           border-radius: 10px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: wheat;
+            font-size: 13px;
+        }
+        .row{
+            display: flex;
+            height: 88%;
+            align-items: center;
+
+        }
+        .col{
+            flex-basis: 50%;
+
+        }
+        h1{
+            color:wheat;
+            font-size: 100px;
+
+        }
+        p{
+            color: wheat;
+            font-size: 30px;
+            text-decoration: papayawhip;
+        }
+        button{
+            width: 180px;
+            color: black;
+            font-size: 12px;
+            padding: 12px 0;
+            background: #fff;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        .card{
+            width: 200px;
+            height: 230px;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 10px 15px;
+            background-position: center;
+            background-size: cover;
+            transition: transform 0.5s;
+        }
+        .c1{
+            background-image: url('https://www.jeuxetcompagnie.fr/wp-content/uploads/2014/01/coloriage-guitare.jpg');
+        }
+        .c2{
+            background-image: url('data:image/png;base64,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');
+        }
+        .c3{
+            background-image: url('https://img.freepik.com/vecteurs-premium/concept-chant-personnes-microphone-musique-chanteur-modele-logo-vectoriel_22692-473.jpg');
+        }
+        .c4{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF1AzcXTIbPkkYrlMUfzY4RvwZsAG3uoEaWw&usqp=CAU');
+        }
+        .card:hover{
+            transform: translateY(-10px);
+        }
+        h5{
+            color: black;
+            text-shadow: 0 0 5px #999;
+        }
+
+    </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="https://previews.123rf.com/images/svetlanaparsh/svetlanaparsh1510/svetlanaparsh151000069/47461427-logo-avec-cl%C3%A9-de-sol.jpg" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="C:\Users\hp\Documents\abdo\About us.html">ABOUT US</a></li>
+                        <li><a href="C:\Users\hp\Documents\abdo\contact.html">CONTACt US</a></li>
+                        <li><a href="C:\Users\hp\Documents\abdo\homelivre.html">LOG OUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>CLEDESOL</h1>
+                    <p> Agence d'éduction du music</p>
+                    <button type="button">Read More</button>
+                </div>
+                <div class="col">
+                    <div class="card c1">
+                        <h5>INSTRUMENTS</h5>
+                    </div>
+                    <div class="card c2">
+                        <h5>VOCALISE</h5>
+                    </div>
+                    <div class="card c3">
+                        <h5>CHANT</h5>
+                    </div>
+                    <div class="card c4">
+                        <h5>REMIX</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
